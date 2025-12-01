@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Branch Test — Index</title>
+</head>
+<body>
+    <header>
+        <h1>Branch Test</h1>
+        <p>Simple HTML-only page (no CSS)</p>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This is a minimal HTML document. It uses semantic elements only — no CSS included.</p>
+            <p>Use this file as a starting point for your project.</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Describe your project here. Add more sections, images, lists, or forms as needed.</p>
+
+            <h3>Features</h3>
+            <ul>
+                <li>Semantic HTML structure</li>
+                <li>Accessible headings and landmarks</li>
+                <li>No external or internal CSS</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>Examples</h2>
+
+            <h3>Table</h3>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption>Sample data</caption>
+                <thead>
+                    <tr><th>Item</th><th>Quantity</th><th>Price</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Apples</td><td>10</td><td>$2.00</td></tr>
+                    <tr><td>Oranges</td><td>5</td><td>$3.50</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Form</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input id="name" name="name" type="text" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input id="email" name="email" type="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Notes</h2>
+        <p>Use HTML attributes like border, cellpadding, and cellspacing if you need basic presentation without CSS. Prefer semantic markup for structure and accessibility.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Branch Test</p>
+        <script>
+            // small JS to set current year; keeps HTML file purely structural otherwise
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
